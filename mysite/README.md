@@ -43,6 +43,14 @@ Or to deploy only a single content package, run in the sub-module directory (i.e
 
     mvn clean install -PautoInstallPackage
 
+Or The build of core module deploys an OSGi bundle to AEM. To build just this module
+    $ cd core/
+    mvn clean install -PautoInstallBundle
+
+Or The build of ui.apps
+    $ cd ../ui.apps
+    mvn clean install -PautoInstallPackage
+
 ## Testing
 
 There are three levels of testing contained in the project:
